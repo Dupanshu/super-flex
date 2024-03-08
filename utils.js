@@ -1,18 +1,20 @@
 'use strict';
 
+//Utility functions
+
 // Get HTML element by id
-export function getElementById(selector, scope = document) {
-    return scope.getElementById(sel);
+export function getElement(selector, scope = document) {
+    return scope.getElementById(selector);
   }
   
   // Select HTML element
   export function select(selector, scope = document) {
-    return scope.querySelector(sel);
+    return scope.querySelector(selector);
   }
   
   // Get a list of HTML elements as an array
-  export function selectAllEl(selector, scope = document) {
-    return [...scope.querySelectorAll(sel)];
+  export function selectAll(selector, scope = document) {
+    return [...scope.querySelectorAll(selector)];
   }
 
   export function print(...args) {
